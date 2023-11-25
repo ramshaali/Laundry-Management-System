@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="640.0" styleClass="backgroundColor" stylesheets="@application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller">
+   <top>
+      <ButtonBar nodeOrientation="LEFT_TO_RIGHT" prefHeight="53.0" prefWidth="1131.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <buttons>
+            <TextFlow nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="159.0" style="-fx-text-alignment: left; -fx-padding: 10;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #1cc0d2; -fx-text-alignment: left; -fx-font-size: 20; -fx-font-family: cursive; -fx-font-style: italic;" text="Spot" wrappingWidth="42.641944885253906" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #1c92d2; -fx-text-alignment: left; -fx-font-size: 20; -fx-font-family: cursive;" text="Right" wrappingWidth="45.9375" />
+               </children>
+            </TextFlow>
+            <Button graphicTextGap="2.0" mnemonicParsing="false" onAction="#home" style="-fx-font-size: 10; -fx-background-color: white; -fx-font-family: fantasy; -fx-text-fill: #1c92d2;" text="Home" />
+            <Button graphicTextGap="2.0" mnemonicParsing="false" onAction="#price" style="-fx-font-size: 10; -fx-background-color: white; -fx-font-family: fantasy; -fx-text-fill: #1c92d2;" text="Pricing" />
+            <Button graphicTextGap="2.0" mnemonicParsing="false" onAction="#services" style="-fx-font-size: 10; -fx-background-color: white; -fx-font-family: fantasy; -fx-text-fill: #1c92d2;" text="Services" />
+            <Button graphicTextGap="2.0" mnemonicParsing="false" onAction="#onHandle" prefHeight="37.0" style="-fx-font-size: 10; -fx-background-color: white; -fx-font-family: fantasy; -fx-text-fill: #1c92d2; -fx-border-color: #1c92d2; -fx-border-radius: 20;" text="Login/Register" />
+         </buttons>
+      </ButtonBar>
+   </top>
+   <left>
+      <AnchorPane prefHeight="488.0" prefWidth="640.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="148.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our Services" textAlignment="CENTER" wrappingWidth="345.15252685546875">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="212.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SpotRight caters all your laundry hustle">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="64.0" fitWidth="70.0" layoutX="29.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/review%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="64.0" fitWidth="70.0" layoutX="93.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/address.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="10.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Business Laundry" textAlignment="CENTER" wrappingWidth="345.15252685546875">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="69.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Residential Laundry" textAlignment="CENTER" wrappingWidth="345.15252685546875">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="64.0" fitWidth="70.0" layoutX="29.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/delivery%20(1).png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="20.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Door-to-Door delivery" textAlignment="CENTER" wrappingWidth="345.15252685546875">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1c92d2" height="81.0" layoutX="4.0" layoutY="87.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="633.0">
+               <effect>
+                  <MotionBlur />
+               </effect>
+            </Rectangle>
+            <ImageView fitHeight="403.0" fitWidth="253.0" layoutX="326.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/services.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="29.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Business Clients" textAlignment="CENTER" wrappingWidth="127.15249633789062">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="183.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" People Like us" textAlignment="CENTER" wrappingWidth="205.15252685546875">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="498.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employees" textAlignment="CENTER" wrappingWidth="117.15252685546875">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="29.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="450 " textAlignment="CENTER" wrappingWidth="127.15249633789062">
+               <font>
+                  <Font name="Arial Black" size="28.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="230.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4250 " textAlignment="CENTER" wrappingWidth="127.15249633789062">
+               <font>
+                  <Font name="Arial Black" size="28.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="493.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="390" textAlignment="CENTER" wrappingWidth="127.15249633789062">
+               <font>
+                  <Font name="Arial Black" size="28.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

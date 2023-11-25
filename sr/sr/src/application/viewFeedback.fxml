@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminFuctionsCon">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" styleClass="backgroundColor" stylesheets="@application.css">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fdfdfd" height="32.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="640.0" />
+            <Hyperlink layoutX="574.0" layoutY="16.0" onAction="#login" prefHeight="29.0" prefWidth="58.0" text="Logout" />
+            <Text fill="WHITE" layoutX="29.0" layoutY="134.0" lineSpacing="2.0" stroke="#1c92d2" strokeType="OUTSIDE" text="Rating &amp; Feedback" wrappingWidth="154.70962524414062">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="29.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Text>
+            <Text fill="#1cc0d2" layoutX="286.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Spot">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#1c92d2" layoutX="322.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Right">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Arc fill="WHITE" layoutX="644.0" layoutY="261.0" length="270.0" radiusX="301.0" radiusY="215.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+            <ImageView fitHeight="187.0" fitWidth="257.0" layoutX="375.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/feedback_2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="91.0" layoutX="575.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/grid.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="29.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customers leave feedback against their orders. This aids to monitor the overall performance of the business." wrappingWidth="270.3463439941406" />
+            <ComboBox fx:id="orderidbox" layoutX="89.0" layoutY="261.0" prefWidth="150.0" promptText="Order ID" />
+            <Button layoutX="111.0" layoutY="415.0" mnemonicParsing="false" onAction="#viewFB" text="View Feedback" />
+            <TextField fx:id="fb" layoutX="47.0" layoutY="313.0" prefHeight="81.0" prefWidth="234.0" promptText="Feedback will be Displayed Here..." style="-fx-font-style: italic;" />
+            <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="1.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/back-arrow.png" />
+               </image>
+            </ImageView>
+            <Button graphicTextGap="1.0" layoutX="-13.0" layoutY="17.0" minWidth="8.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="8.0" style="-fx-scale-x: 0.6; -fx-scale-y: 0.9; -fx-background-color: transparent;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Hyperlink layoutX="36.0" layoutY="15.0" onAction="#back" prefHeight="29.0" prefWidth="58.0" text="Back" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

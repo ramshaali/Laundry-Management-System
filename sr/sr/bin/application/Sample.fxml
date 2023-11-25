@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" styleClass="backgroundColor" stylesheets="@application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller">
+   <top>
+      <ButtonBar nodeOrientation="LEFT_TO_RIGHT" prefHeight="53.0" prefWidth="1131.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+        <buttons>
+            <TextFlow nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="159.0" style="-fx-text-alignment: left; -fx-padding: 10;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #1cc0d2; -fx-text-alignment: left; -fx-font-size: 20; -fx-font-family: cursive; -fx-font-style: italic;" text="Spot" wrappingWidth="42.641944885253906" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #1c92d2; -fx-text-alignment: left; -fx-font-size: 20; -fx-font-family: cursive;" text="Right" wrappingWidth="45.9375" />
+               </children>
+            </TextFlow>
+          <Button graphicTextGap="2.0" mnemonicParsing="false" style="-fx-font-size: 10; -fx-background-color: white; -fx-font-family: fantasy; -fx-text-fill: #1c92d2;" text="Home" />
+            <Button graphicTextGap="2.0" mnemonicParsing="false" onAction="#price" style="-fx-font-size: 10; -fx-background-color: white; -fx-font-family: fantasy; -fx-text-fill: #1c92d2;" text="Pricing" />
+            <Button graphicTextGap="2.0" mnemonicParsing="false" onAction="#services" style="-fx-font-size: 10; -fx-background-color: white; -fx-font-family: fantasy; -fx-text-fill: #1c92d2;" text="Services" />
+            <Button graphicTextGap="2.0" mnemonicParsing="false" onAction="#onHandle" prefHeight="37.0" style="-fx-font-size: 10; -fx-background-color: white; -fx-font-family: fantasy; -fx-text-fill: #1c92d2; -fx-border-color: #1c92d2; -fx-border-radius: 20;" text="Login/Register" />
+        </buttons>
+      </ButtonBar>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="497.0" prefWidth="640.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="5.0" prefHeight="227.0" prefWidth="549.0" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="86.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="230.0" fitWidth="322.0" layoutX="147.0" pickOnBounds="true" preserveRatio="true" style="-fx-scale-x: 2; -fx-scale-y: 1;">
+                     <image>
+                        <Image url="@../../../../Downloads/home.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="275.0" layoutY="46.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.5" style="-fx-fill: #1cc0d2; -fx-font-size: 20;" text="The Best Laundry Service in Twin City" />
+                  <Text layoutX="373.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #1c92d2; -fx-font-family: monoscope;" text="Delivered at your Doorstep" />
+                  <Text layoutX="329.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: grey;" text="We are open 7 days a week  9am-9pm" />
+               </children>
+            </Pane>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="132.0" layoutX="93.0" layoutY="286.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="121.0">
+               <effect>
+                  <DropShadow color="#3aa5da" />
+               </effect>
+            </Rectangle>
+            <Text layoutX="273.0" layoutY="254.0" stroke="#1cc0d2" strokeType="OUTSIDE" style="-fx-fill: white; -fx-font-size: 12;" text="----Our Features----">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+            </Text>
+            <Text layoutX="203.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-size: 15; -fx-font-style: bold;" text="Why Will You Choose Our Services?" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="132.0" layoutX="266.0" layoutY="286.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="121.0">
+               <effect>
+                  <DropShadow color="#3aa5da" />
+               </effect>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="132.0" layoutX="436.0" layoutY="286.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="121.0">
+               <effect>
+                  <DropShadow color="#3aa5da" />
+               </effect>
+            </Rectangle>
+            <ScrollBar layoutX="628.0" layoutY="4.0" orientation="VERTICAL" prefHeight="430.0" prefWidth="13.0" />
+            <Text fill="#1c92d2" layoutX="102.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quality Services" textAlignment="CENTER" wrappingWidth="103.83599853515625" />
+            <Text fill="#1c92d2" layoutX="266.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Free Home Delivery" textAlignment="CENTER" wrappingWidth="119.16937255859375" />
+            <Text fill="#1c92d2" layoutX="434.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100% Satisfaction" textAlignment="CENTER" wrappingWidth="125.1693115234375" />
+            <ImageView fitHeight="69.0" fitWidth="76.0" layoutX="119.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/medal.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="69.0" fitWidth="76.0" layoutX="292.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/delivery.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="69.0" fitWidth="76.0" layoutX="462.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/satisfaction.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

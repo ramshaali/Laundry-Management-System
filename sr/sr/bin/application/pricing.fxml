@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="640.0" styleClass="backgroundColor" stylesheets="@application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller">
+   <top>
+      <ButtonBar nodeOrientation="LEFT_TO_RIGHT" prefHeight="53.0" prefWidth="1131.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <buttons>
+            <TextFlow nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="159.0" style="-fx-text-alignment: left; -fx-padding: 10;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #1cc0d2; -fx-text-alignment: left; -fx-font-size: 20; -fx-font-family: cursive; -fx-font-style: italic;" text="Spot" wrappingWidth="42.641944885253906" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #1c92d2; -fx-text-alignment: left; -fx-font-size: 20; -fx-font-family: cursive;" text="Right" wrappingWidth="45.9375" />
+               </children>
+            </TextFlow>
+            <Button graphicTextGap="2.0" mnemonicParsing="false" onAction="#home" style="-fx-font-size: 10; -fx-background-color: white; -fx-font-family: fantasy; -fx-text-fill: #1c92d2;" text="Home" />
+            <Button graphicTextGap="2.0" mnemonicParsing="false" onAction="#price" style="-fx-font-size: 10; -fx-background-color: white; -fx-font-family: fantasy; -fx-text-fill: #1c92d2;" text="Pricing" />
+            <Button graphicTextGap="2.0" mnemonicParsing="false" onAction="#services" style="-fx-font-size: 10; -fx-background-color: white; -fx-font-family: fantasy; -fx-text-fill: #1c92d2;" text="Services" />
+            <Button graphicTextGap="2.0" mnemonicParsing="false" onAction="#onHandle" prefHeight="37.0" style="-fx-font-size: 10; -fx-background-color: white; -fx-font-family: fantasy; -fx-text-fill: #1c92d2; -fx-border-color: #1c92d2; -fx-border-radius: 20;" text="Login/Register" />
+         </buttons>
+      </ButtonBar>
+   </top>
+   <center>
+      <AnchorPane prefHeight="548.0" prefWidth="676.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="55.0" layoutX="185.0" layoutY="463.0" stroke="#d9e2ef" strokeType="OUTSIDE" strokeWidth="3.0" width="272.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="55.0" layoutX="184.0" layoutY="391.0" stroke="#d9e2ef" strokeType="OUTSIDE" strokeWidth="3.0" width="272.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="55.0" layoutX="184.0" layoutY="319.0" stroke="#d9e2ef" strokeType="OUTSIDE" strokeWidth="3.0" width="272.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="55.0" layoutX="184.0" layoutY="247.0" stroke="#d9e2ef" strokeType="OUTSIDE" strokeWidth="3.0" width="272.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1c92d2" height="134.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="640.0">
+               <effect>
+                  <MotionBlur />
+               </effect>
+            </Rectangle>
+            <Text fill="WHITE" layoutX="136.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reasonable &amp; Transparent Pricing">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="213.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Free Home delivery. No surprise fee.">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="55.0" layoutX="184.0" layoutY="178.0" stroke="#d9e2ef" strokeType="OUTSIDE" strokeWidth="3.0" width="272.0" />
+            <ImageView fitHeight="46.0" fitWidth="75.0" layoutX="245.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/shirt.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="310.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 400">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="46.0" fitWidth="75.0" layoutX="245.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/pants.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="310.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 400">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="46.0" fitWidth="75.0" layoutX="247.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/coat.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="310.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 600">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="46.0" fitWidth="75.0" layoutX="247.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/blanket.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="312.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 1200">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="46.0" fitWidth="75.0" layoutX="247.0" layoutY="467.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/curtains.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="312.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 1200">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
